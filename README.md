@@ -13,7 +13,9 @@ To run, ensure that environment variables:
 1. LLAMA_CPP_PATH points to llama.cpp's llama-cli (or main)
 2. MODEL_PATH (or ~/Downloads) has the model specified in the Makefile (as of writing, Meta-Llama-3-8B-Instruct.Q5_K_M)
 
-Then just run "make all" a couple times.
+Then just run "make chop" "make gen" "make book"
+
+If you want to add books, you'll need to update `gutchopper.py` to make it correctly chop up your chapters.
 
 The repository name `gutchopper` relates to the fact that most of the "difficult"
 work is probably figuring out how to chop up the large book into sizable chunks

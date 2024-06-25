@@ -131,6 +131,10 @@ class Gutenberg(Default):
         if line.startswith("CHAPTER ") and self.buffer and self.buffer[-1].strip() == "":
             return True
 
+        # Pride and Prejudice
+        if line.startswith("Chapter ") and self.buffer and self.buffer[-1].strip() == "":
+            return True
+
 
         # This usually is a chapter heading, like "                       CHAPTER I."
         if not line.startswith("              "):
@@ -153,6 +157,9 @@ class Gutenberg(Default):
     def start_marker(self, line):
         if '----------------------------' in line:
             return 2 # This is a start marker, but do not include this line
+
+        if 'START OF THE PROJECT GUTENBERG EBOOK' in line:
+            return 2
 
         if line.strip() == 'Contents':
             return 2

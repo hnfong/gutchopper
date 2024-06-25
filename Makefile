@@ -3,7 +3,7 @@ CHOPPED_TEXT_GENERATIONS=$(shell ls outputs/*.txt | while read -r line; do echo 
 EXTRACT_BOOKS=$(shell cat urls.dat | while read -r line; do echo $$(basename $$line).book.html; done)
 MODEL=Meta-Llama-3-8B-Instruct.Q5_K_M
 
-all: chop gen extract
+all: chop
 
 chop: $(DOWNLOADS)
 	mkdir -p outputs/
@@ -13,7 +13,7 @@ chop: $(DOWNLOADS)
 gen: $(CHOPPED_TEXT_GENERATIONS)
 	echo "All done"
 
-extract: $(EXTRACT_BOOKS)
+book: $(EXTRACT_BOOKS)
 	echo "All done"
 
 %.txt.gz: # urls.dat -- we don't want to re-download the file every time urls.dat changes
