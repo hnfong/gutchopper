@@ -15,7 +15,9 @@ To run, ensure that environment variables:
 
 Then just run "make chop" "make gen" "make book"
 
-If you want to add books, you'll need to update `gutchopper.py` to make it correctly chop up your chapters.
+If you want to add books, you'll need to update `gutchopper.py` to make it
+correctly chop up your chapters, see commit 279d1f6 for an example of what you
+may need to change.
 
 The repository name `gutchopper` relates to the fact that most of the "difficult"
 work is probably figuring out how to chop up the large book into sizable chunks
