@@ -22,3 +22,10 @@ may need to change.
 The repository name `gutchopper` relates to the fact that most of the "difficult"
 work is probably figuring out how to chop up the large book into sizable chunks
 that can be processed by the LLM.
+
+## Examples / Samples
+
+- [Pride and Prejudice - Jane Austen](https://hnfong.github.io/gutchopper/1342-0.txt.book.html)
+- [An Inquiry into the Nature and Causes of the Wealth of Nations - Adam Smith](https://hnfong.github.io/gutchopper/3300-0.txt.book.html)
+- [The End of the Middle Ages - A. Mary F. Robinson](https://hnfong.github.io/gutchopper/53475-0.txt.book.html)
+
