@@ -10,7 +10,10 @@ chop: $(DOWNLOADS)
 	for ff in *.txt.gz; do python3 gutchopper.py -t modern_english.template -f "$$ff" -o ./outputs/; done
 	echo "All done"
 
-gen: $(CHOPPED_TEXT_GENERATIONS)
+gen:
+	time make _gen
+
+_gen: $(CHOPPED_TEXT_GENERATIONS)
 	echo "All done"
 
 book: $(EXTRACT_BOOKS)
