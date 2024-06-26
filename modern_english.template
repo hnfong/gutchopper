@@ -1,8 +1,9 @@
-Rewrite the following text in modern English. Make it short, modern and concise. Make it engaging to a young and impatient reader. You may take some liberties as to the rewrite as long as the original meaning is preserved.
+Rewrite the following text in modern English. Make it modern and concise. Make it engaging to a young and impatient reader. You may take some liberties as to the rewrite as long as the original meaning is preserved.
 
-Prefix your rewrite with "-BEGIN REWRITE-". When finished, write "-END REWRITE-".
+Prefix your rewrite with "-BEGIN CONCISE VERSION-". When finished, write "-END CONCISE VERSION-".
 
 ```
 {CHOPPER_CONTENT}
 ```
+
 
