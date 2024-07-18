@@ -21,7 +21,8 @@ may need to change.
 
 The repository name `gutchopper` relates to the fact that most of the "difficult"
 work is probably figuring out how to chop up the large book into sizable chunks
-that can be processed by the LLM.
+that can be processed by the LLM. (It may also be a reference to how the original
+text is butchered by the LLM.)
 
 ## Examples / Samples
 
